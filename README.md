@@ -1,5 +1,4 @@
-# Bootstrap typescript node/react
+# Youtuve - Event Driven 01
 
-Bootstrap para inciar projetos com backend em node, e front end com react
+Teste utilizando o Event Drive, programação orientada a eventos
 
-Webpack, eslint, babel, e etc configurados
