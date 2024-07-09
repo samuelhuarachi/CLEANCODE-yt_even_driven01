@@ -19,4 +19,22 @@ describe("testing product", () => {
 
         expect(true).toBe(mailer.get_mails().includes(2));
     });
+
+    test("create a bus", async () => {
+        const input = {
+            id: 1,
+            company: "Mexico Border",
+            year_fabrication: 1987,
+            total_km: 323321,
+        };
+        const new_bus = new NewBus();
+        await new_bus.execute(input);
+    });
+
+    test("create new bus ticket", async () => {
+        // adicionar um bus ticket
+        // aviso o usuario que o busticket foi adicionado
+        // aviso meu financeiro que um bus ticket foi gerado
+        const add_bus_ticket = new AddBusTicket();
+    });
 });

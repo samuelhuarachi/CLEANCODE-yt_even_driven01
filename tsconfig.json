@@ -25,7 +25,6 @@
         ".vscode",
         "webpack.config.js",
         "dist",
-        "__tests__",
         "webpack.dev.js"
     ]
 }
