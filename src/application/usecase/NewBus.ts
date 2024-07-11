@@ -20,8 +20,10 @@ export default class NewBus implements Event {
 }
 
 type Input = {
+    id: string,
     name: string,
     company: string,
     year_fabrication: number,
-    total_km: number
+    total_km: number,
+    total_seats: number
 }

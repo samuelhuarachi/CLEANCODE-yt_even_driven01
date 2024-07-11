@@ -5,10 +5,12 @@ import Mediator2 from "../src/infra/Mediator2";
 describe("Company bus", () => {
     test("Create a bus", async () => {
         const input = {
-            name: "Mexico to EUA",
+            id: "00000001",
+            name: "Mexico to EUA Bus 1",
             company: "Mexico Border",
             year_fabrication: 1987,
             total_km: 323321,
+            total_seats: 30,
         };
 
         const mediator = new Mediator2();
