@@ -30,7 +30,8 @@
         "camelcase": "off",
         "object-curly-spacing": ["error", "always"],
         "no-unused-vars": 0,
-        "valid-jsdoc": 0
+        "valid-jsdoc": 0,
+        "new-cap": 0
     },
     "plugins": ["@typescript-eslint"]
 }

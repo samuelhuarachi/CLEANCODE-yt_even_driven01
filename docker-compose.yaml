@@ -1,0 +1,19 @@
+version: '3'
+services:
+ mongo-db:
+  image: mongo:5.0
+  container_name: mongo_samuel
+  environment:
+      MONGO_INITDB_ROOT_USERNAME: samuel
+      MONGO_INITDB_ROOT_PASSWORD: samuel123
+  ports:
+   - "27032:27017"
+  volumes:
+   - .docker/dbdata:/data/db
+
+networks:
+    camapi-network:
+        driver: bridge
+        ipam:
+         config:
+           - subnet: 172.23.0.0/16

@@ -1,5 +1,6 @@
 import Event from "../../domain/event/Event";
 import Mediator2 from "../../infra/Mediator2";
+import NewBus from "./NewBus";
 
 export default class NewLog implements Event {
     event_name = "NewLog";
@@ -8,9 +9,9 @@ export default class NewLog implements Event {
     constructor(readonly mediator: Mediator2) {}
 
     async reacting(event: Event): Promise<void> {
-        switch (event.event_name) {
-        case "NewBus":
-            console.log("Estou reagindo a new bus");
+        switch (true) {
+        case event instanceof NewBus:
+            console.log(`Estou reagindo a new bus, e a id dele é: ${ (event as NewBus).bus_id}`);
             this.execute({ tag: "new_bus", message: "new bus was created" });
             break;
 
